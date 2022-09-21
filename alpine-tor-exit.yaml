@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tor-exit:
+    image: chrisbensch/docker-tor-multi
+    container_name: tor-exit
+    environment:
+      - mode=exit
+    ports:
+      - 80:80
+

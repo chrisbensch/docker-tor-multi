@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  tor:
+    image: chrisbensch/docker-tor-multi
+    container_name: tor

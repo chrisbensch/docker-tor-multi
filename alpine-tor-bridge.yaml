@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tor-bridge:
+    image: chrisbensch/docker-tor-multi
+    container_name: tor-bridge
+    environment:
+      - mode=bridge
+    ports:
+       - 443:443
+  

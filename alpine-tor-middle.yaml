@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tor-middle:
+    image: chrisbensch/docker-tor-multi
+    container_name: tor-middle
+    environment:
+      - mode=middle
+    ports:
+      - 443:443

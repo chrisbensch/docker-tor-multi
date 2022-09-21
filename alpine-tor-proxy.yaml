@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  tor-proxy:
+    image: chrisbensch/docker-tor-multi
+    container_name: tor-proxy
+    environment:
+      - mode=proxy
+    ports:
+      - 9050:9050
+
